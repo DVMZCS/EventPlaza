@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Clone the Git repository into the container
-RUN git clone https://github.com/Abdorithm/EventPlaza.git .
+RUN git clone https://github.com/DVMZCS/EventPlaza/blob/main/requirements.txt .
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
